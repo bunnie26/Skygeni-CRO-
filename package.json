@@ -1,0 +1,16 @@
+{
+  "name": "skygeni-revenue-console",
+  "private": true,
+  "description": "Revenue Intelligence Console monorepo",
+  "scripts": {
+    "backend:install": "cd backend && npm install",
+    "backend:build": "cd backend && npm run build",
+    "backend:start": "cd backend && npm start",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:dev": "cd frontend && npm run dev",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "build": "npm run backend:build && npm run frontend:build"
+  }
+}
