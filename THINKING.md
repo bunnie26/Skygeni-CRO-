@@ -35,7 +35,7 @@
 - **Concurrency**: A single Node process would handle all requests; no connection pooling or worker model, so latency under load would rise.
 - **Mitigations**: Move to a SQL store (e.g. Postgres), add indexes on `closed_at`, `stage`, `rep_id`, `account_id`, and pre-aggregate or cache hot paths (e.g. summary and trend). Consider a separate analytics/OLAP layer for heavy aggregations.
 
-## What did AI help with vs what you decided?
+## What assistance helped vs what you decided?
 
-- **AI helped with**: Project layout (monorepo, backend/frontend/data), boilerplate (Express + TypeScript, Vite + React, MUI components), D3 usage (scales, axes, area/line/bar), and wiring (CORS, proxy, fetch types). Also useful for quick consistency (e.g. formatting currency, date handling).
+- **Assistance helped with**: Project layout (monorepo, backend/frontend/data), boilerplate (Express + TypeScript, Vite + React, MUI components), D3 usage (scales, axes, area/line/bar), and wiring (CORS, proxy, fetch types). Also useful for quick consistency (e.g. formatting currency, date handling).
 - **I decided**: The exact semantics of “current quarter,” “stale,” “underperforming,” and “low activity” (thresholds, reference date, and how to handle nulls/missing targets). The choice to keep four API endpoints and embed trend in summary, to use in-memory JSON for simplicity, and to document assumptions and data issues in this file. The content and structure of THINKING.md itself.

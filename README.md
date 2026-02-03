@@ -12,7 +12,7 @@ A single-page Revenue Intelligence Console that helps a CRO answer:
 ├── backend/     # TypeScript API (Express)
 ├── frontend/    # React + TypeScript (Vite, Material UI, D3)
 ├── data/        # JSON data (accounts, reps, deals, activities, targets)
-├── THINKING.md  # Assumptions, data issues, tradeoffs, scale, AI use
+├── THINKING.md  # Assumptions, data issues, tradeoffs, scale, reflection
 └── README.md
 ```
 
@@ -73,5 +73,4 @@ cd frontend && npm install && npm run dev
 
 ## Reflection
 
-See **THINKING.md** for assumptions, data issues, tradeoffs, what would break at 10× scale, and how AI was used vs human decisions.
-# Skygeni-CRO-
+See **THINKING.md** for assumptions, data issues, tradeoffs, what would break at 10× scale, and reflection on approach vs decisions.
